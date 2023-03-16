@@ -113,7 +113,7 @@ nav li a:hover{
     @media all and (min-width: 1024px) { /*CSS kicks in when the device width is 1024px and above*/
     /* Large devices (laptops/desktops, 1024px and up) */
      .grid {
-         grid-template-columns: 3fr 1fr 1fr;
+         grid-template-columns: 2fr 1fr 1fr;
         /*fr = fraction*/
         /* Hint : 3fr 1fr 1fr; are the number of columns and how they are split*/
          grid-template-areas: 
