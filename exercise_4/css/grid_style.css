@@ -118,8 +118,8 @@ nav li a:hover{
         /* Hint : 3fr 1fr 1fr; are the number of columns and how they are split*/
          grid-template-areas: 
         "nav nav nav"
-         "article second_sidebar sidebar" 
-         "imageBox second_sidebar sidebar" 
+         "article sidebar second_sidebar" 
+         "imageBox sidebar second_sidebar" 
          "footer footer footer";
     }
 
