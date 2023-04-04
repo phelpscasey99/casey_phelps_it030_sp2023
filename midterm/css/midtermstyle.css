@@ -1,0 +1,187 @@
+body {
+     font-family: Arial, Verdana, sans-serif;
+     font-size: 12px;
+     color: black;
+}
+
+header {
+	 grid-area: header;
+     border: 2px solid black;
+     padding: 10px;
+     background-color: whitesmoke;
+}
+
+nav {
+	 grid-area: nav;
+     border: 2px solid black;
+     padding: 10px;
+     background-color: whitesmoke;
+}
+
+section {
+	 grid-area: section;
+     border: 2px solid black;
+     padding: 10px;
+}
+
+article {
+	 grid-area: article;
+     border: 2px solid black;
+     padding: 10px;
+     background-color: whitesmoke;
+}
+
+aside {
+	 grid-area: aside;
+     border: 2px solid black;
+     padding: 10px;
+     
+}
+
+footer {
+	 grid-area: footer;
+     border: 2px solid black;
+     padding: 10px;
+     background-color: whitesmoke;
+}
+
+.firstcharacter {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 3px;
+	float: left;
+	display: flex;
+}
+
+.firstcharacterpicture {
+	float: right;
+}
+
+.secondcharacter {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 3px;
+	float: left;
+	display: flex;
+}
+
+.secondcharacterpicture {
+	float: right;
+}
+
+.thirdcharacter {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 3px;
+	float: left;
+	display: flex;
+}
+
+.thirdcharacterpicture {
+	float: right;
+}
+
+.homeInfo {
+	background-color: lightpink;
+}
+
+#homePictures {
+	background-color: floralwhite;
+}
+
+#atla {
+	background-color: #61443a;
+}
+
+.atlaInfo {
+	background-color: #D2B48C;
+}
+
+#zuko {
+	background-color: #FA812B;
+}
+
+#sokka {
+	background-color: lightblue;
+}
+
+#toph {
+	background-color: lightgreen;
+}
+
+#toh {
+	background-color: #6F2DA8;
+}
+
+.tohInfo {
+	background-color: #E4A0F7;
+}
+
+#hunter {
+	background-color: #dbba53;
+}
+
+#amity {
+	background-color: #e7cee7;
+}
+
+#king {
+	background-color: lightgrey;
+}
+
+.grid {
+	display: grid;
+
+	gap: 10px;
+	grid-template-areas: "header" "nav" "section" "article" "aside" "footer";
+}
+
+@media all and (max-width: 567px) {
+	.grid{
+		grid-template-columns: 2fr 1fr;
+		 grid-template-areas:
+		 "header header"
+		 "nav nav"
+		 "section section"
+		 "article article"
+		 "aside aside"
+		 "footer footer"
+	}
+}
+
+@media all and (min-width: 567px) {
+	.grid{
+		grid-template-columns: 2fr 1fr;
+		 grid-template-areas:
+		 "header header"
+		 "nav nav"
+		 "section section"
+		 "article article"
+		 "aside aside"
+		 "footer footer"
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+	.grid {
+		grid-template-columns: 3fr 1fr;
+		 grid-template-areas:
+		 "header header"
+		 "nav nav"
+		 "section aside"
+		 "article aside"
+		 "footer footer"
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.grid {
+		grid-template-columns: 3fr 1fr;
+		 grid-template-areas:
+		 "header header"
+		 "nav nav"
+		 "section section"
+		 "article aside"
+		 "footer footer"
+	}
+}
