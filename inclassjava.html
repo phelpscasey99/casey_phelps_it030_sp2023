@@ -1,0 +1,31 @@
+<!DOCtype html>
+<html>
+	<body>
+		
+		<div id="myCoolDivId">I am some placeholder text</div>
+			<script type="text/javascript">
+				document.getElementById("myCoolDivId").innerHTML="The Date is "+ new Date().getDate()
+			;
+			</script>
+		</div>
+
+		<div id="myOtherCoolDivId">More placeholder text</div>
+		<div id="myAnotherCoolDivId">Even more placeholder text</div>
+			<script type="text/javascript">
+				var hours = new Date().getHours();
+
+				document.getElementById("myAnotherCoolDivId").innerHTML="Hours: " + hours;
+
+				if(hours<12) {
+					document.getElementById("myOtherCoolDivId").textContent="It is morning and the time is: " + hours + ", thanks.";
+				} else if(hours === 7) {
+					document.getElementById("myOtherCoolDivId").innerHTML="Its evening.";
+				} else if(hours>12) {
+					document.getElementById("myOtherCoolDivId").innerHTML="Its not morning, and the time is " + hours + ", thanks.";
+				} else {
+					document.getElementById("myOtherCoolDivId").innerHTML="I do not know what time it is, sorry!"
+				}
+			</script>
+		
+	</body>
+</html>
